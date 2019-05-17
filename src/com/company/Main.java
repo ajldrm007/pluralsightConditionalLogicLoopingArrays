@@ -34,7 +34,7 @@ public class Main {
             System.out.println("v1 and v2 are equal");
 
 
-         */
+
         int v1 = 10, v2 = 4, diff;
         if(v1>v2){
             diff = v1-v2;
@@ -48,5 +48,38 @@ public class Main {
         }
         else
             System.out.println("v1 and v2 are equal");
+
+
+
+        int students = 150;
+        int rooms = 0;
+
+        if(rooms>0 && students/rooms>30){System.out.println("Crowded!!");}
+
+        System.out.println();
+        System.out.println("** end program **");
+
+         */
+
+        double val1 = 100.0d;
+        double val2 = 0.0d;
+        double result = 0.0d;
+        char opCode = 'd';
+
+        if(opCode == 'a')
+            result = val1 + val2;
+        else if(opCode == 's')
+            result = val1 - val2;
+        else if (opCode == 'd')
+            result = val2 != 0.0d ? val1 / val2:0.0d;
+        else if (opCode == 'm')
+            result = val1 * val2;
+        else
+            System.out.println("Error - invalid opCode");
+            result = 0.0d;
+        System.out.println(result);
+
+
+
     }
 }
