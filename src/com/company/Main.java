@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
 
         /*
         int v1 = 7;
@@ -59,7 +59,7 @@ public class Main {
         System.out.println();
         System.out.println("** end program **");
 
-         */
+
 
         double val1 = 100.0d;
         double val2 = 0.0d;
@@ -78,8 +78,63 @@ public class Main {
             System.out.println("Error - invalid opCode");
             result = 0.0d;
         System.out.println(result);
+*/
+        int kVal = 5;
+        int factorial = 1;
+        /*
+        while(kVal > 1){
+            factorial *= kVal;
+            kVal -= 1;
+            System.out.println(factorial);
+        }
 
+        while(kVal > 1){
+            factorial *= kVal--;
+            System.out.println(factorial);
+        }
+*/
+        /*
+        int iVal = 5;
+        do{
+            System.out.print(iVal);
+            System.out.print(" * 2 = ");
+            iVal *= 2;
+            System.out.println(iVal);
 
+        }while(iVal < 100);
+
+         */
+/*
+        for(int iVal = 1; iVal < 100; iVal *= 2){
+            System.out.println(iVal);
+        }
+
+ */
+        //arrays
+        /*
+        float[] theVals = new float[3];
+        theVals[0] = 10.0f;
+        theVals[1] = 20.0f;
+        theVals[2] = 15.0f;
+
+        float sum = 0.0f;
+        for (int i = 0; i < theVals.length; i++)
+        {
+            sum+=theVals[i];
+            System.out.println(sum);
+
+        }
+        System.out.println(sum);
+
+         */
+
+        float[] theVals = {10.0f, 20.0f, 15.0f};
+        float sum = 0.0f;
+        for(int i = 0; i < theVals.length; i++){
+            sum+=theVals[i];
+            System.out.println(sum);
+        }
+        System.out.println(sum);
 
     }
 }
